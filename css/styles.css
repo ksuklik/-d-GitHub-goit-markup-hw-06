@@ -318,6 +318,13 @@ fill:var(--accent-color);
   color: #212121;
 }
 
+textarea{
+  resize: none;
+  width: 100%;
+  height: 120;
+  padding: 16px 12px;
+}
+
 .form-field{
 display: flex;
   flex-direction: column;
@@ -331,6 +338,15 @@ display: flex;
   line-height: 14px;
 
   color: #757575;
+}
+
+.form-input:focus{
+  border: 1px solid #2196F3;
+  outline: none;
+}
+
+.form-input:focus + .form-ikon{
+  fill: #2196F3;
 }
 
 .form-input{
@@ -355,11 +371,7 @@ border-radius: 4px;
 /* Организхационные моменты */
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  right: 1px;
-  margin: 1px;
+  display: none;
 }
 
 .features {
@@ -731,6 +743,10 @@ color: #212121;
 .footer-container{
   display: flex;
   flex-direction: row 
+}
+
+.footer-form-label{
+  display: flex;
 }
 
 .footer-form-label input{
