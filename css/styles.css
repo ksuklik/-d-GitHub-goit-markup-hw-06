@@ -280,7 +280,7 @@ fill:var(--accent-color);
    background: #FFFFFF;
    transform: translate(-50%, -50%);
    width: 528px;
-   height: 581px;
+   min-height: 581px;
  }
 
 .button-modal{
@@ -322,8 +322,9 @@ fill:var(--accent-color);
 .coment{
   resize: none;
   width: 100%;
-  height: 120;
+  height: 120px;
   padding: 16px 12px;
+  margin-bottom: 20px;
 }
 
 .coment:hover,.coment:focus{
@@ -379,18 +380,53 @@ border-radius: 4px;
   -moz-appearance:none;
   appearance:none
 }
-.checkbox-ikon{
-  display: inline-block;
+
+
+.checkbox-label{
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--primary-text-color);
+}
+
+.checkbox-label span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
-  left: 58px;
-  
-  background: #212121;
- 
+  border: 2px solid #212121;
+}
+
+.checkbox:checked + .checkbox-label span{
+ background-color: var(--accent-color);
+ border: none;
+}
+
+.form-link{
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+
+.checkbox-ikon{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
 }
 
 .form-button{
   display: flex;
+  justify-content: center;
   cursor: pointer;
   padding: 10px 55px;
   background: #2196F3;
@@ -402,6 +438,12 @@ border-radius: 4px;
   text-align: center;
   border: transparent;
   color: #FFFFFF;
+}
+
+.form-primary{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Организхационные моменты */

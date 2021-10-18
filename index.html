@@ -97,20 +97,23 @@
               </label>
             </div>
             <div>
-               <input class="checkbox" 
+               <input class="checkbox visually-hidden" 
                type="checkbox"  
                name="checkbox" 
                value=""
                 id="checkbox">
-                <svg class="checkbox-ikon">
-                  <use hreff="./img/sprite.svg#vector1"></use>
-                </svg>
-               <label class="checkbox-label" for="checkbox">Соглашаюсь с рассылкой и принимаю
-                 <a href="">Условия договора</a>
+                
+               <label class="checkbox-label" for="checkbox">
+                 <span>
+                 <svg class="checkbox-ikon">
+                  <use href="./img/sprite.svg#vector"></use>
+                </svg>  
+                 </span> Соглашаюсь с рассылкой и принимаю &#160;
+                 <a href="" class="form-link">Условия договора</a>
                </label>
             </div>
             <div>
-              <button type="submit" class="form-button">Отправить</button>
+              <button type="submit" class="form-primary form-button">Отправить</button>
             </div>
              </form>
         </div>
@@ -464,6 +467,19 @@
                 </a>
               </li>
             </ul>
+        </div>
+        <div class="footer-form">
+          <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+          <div class="footer-container">
+          <label class="footer-form-label">
+            <input type="text" name="" placeholder="E-mail" />
+           <button type="submit" class="btn-title">Подписаться
+             <svg class="btn-icon">
+               <use href="./img/sprite.svg#icon_send"></use>
+            </svg>
+           </button>
+          </label>
+          </div>
         </div>
      </div>
 
