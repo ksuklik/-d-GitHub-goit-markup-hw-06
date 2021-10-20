@@ -325,6 +325,9 @@ fill:var(--accent-color);
   height: 120px;
   padding: 16px 12px;
   margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .coment:hover,.coment:focus{
@@ -361,8 +364,10 @@ width: 100%;
 padding: 14px;
 padding-left: 42px;
 background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+/* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px; */
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
 }
 
 .form-ikon{
@@ -416,11 +421,11 @@ border-radius: 4px;
 }
 
 .checkbox-ikon{
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 15px;
+  width: 11px;
+  height: 8px;
   border-radius: 2px;
 }
 
@@ -877,7 +882,6 @@ color: rgba(255, 255, 255, 0.6);
   
 }
 
- 
 /* страница портфолио */
 
  .portfolio{
